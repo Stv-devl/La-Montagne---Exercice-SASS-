@@ -25,7 +25,7 @@ The result for desktop : (IN CONSTRUCTION)
 
 ![](.)
 
-For mobile :
+For mobile :(IN CONSTRUCTION)
 
 ![](.)
 
