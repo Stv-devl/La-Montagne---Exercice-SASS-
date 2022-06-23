@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "inter";
+  font-family: "merriweather";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "merriweather", sans-serif;
+  font-size: 13px;
+}
+
+header {
+  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
+  min-width: 100vh;
+  height: 891px;
+}
+
+.header-center {
+  height: 818px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-center h1 {
+  font-size: 5em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(254, 253, 253);
+  font-family: "merriweather", sans-serif;
+}
+.header-center p {
+  margin: 68px auto 70px auto;
+  font-size: 1.5em;
+  font-style: italic;
+  color: rgb(254, 253, 253);
+  font-family: "merriweather", sans-serif;
+}
+
+header {
+  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
+  min-width: 100vh;
+  height: 891px;
+}
+
+.header-center {
+  height: 818px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-center h1 {
+  font-size: 5em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(254, 253, 253);
+  font-family: "merriweather", sans-serif;
+}
+.header-center p {
+  margin: 68px auto 70px auto;
+  font-size: 1.5em;
+  font-style: italic;
+  color: rgb(254, 253, 253);
+  font-family: "merriweather", sans-serif;
+}
+
+section {
+  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
+  background-repeat: repeat-y;
+  min-width: 100vh;
+  height: 648px;
+}
+
+footer {
+  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
+  background-repeat: no-repeat;
+  min-width: 100vh;
+  height: 763px;
+}/*# sourceMappingURL=index.css.map */

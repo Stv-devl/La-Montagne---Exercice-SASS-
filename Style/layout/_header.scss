@@ -1,0 +1,29 @@
+header {
+  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
+  min-width: 100vh;
+  height: 891px;
+}
+
+.header-center {
+  height: 818px;
+
+  @include center;
+
+  flex-direction: column;
+
+  h1 {
+    font-size: 5em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color1;
+  }
+
+  p {
+    margin: 68px auto 70px auto;
+    font-size: 1.5em;
+    font-style: italic;
+    color: $color1;
+    font-family: $font2;
+  }
+}
