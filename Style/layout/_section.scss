@@ -1,6 +1,60 @@
-section {
-    background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover; 
-    background-repeat: repeat-y;
-    min-width: 100vh;
-    height: 648px;  
+.container {
+  background: $color1;
+  width: 72%;
+  height: 2417px;
+  margin: auto;
+  position: relative;
+
+  @media screen and (max-width: 550px) {
+    width: 85%;
+  }
+
+  .container-top {
+    padding: 50px 0 60px 0;
+
+    &::before {
+      content: "";
+      width: 30%;
+      height: 2px;
+      background: $color4;
+      position: absolute;
+      transform: translatex(45%);
+    }
+
+    &:after {
+      content: "";
+      width: 30%;
+      height: 2px;
+      background: $color4;
+      position: absolute;
+      top: 52px;
+      transform: translatex(-145%);
+    }
+  }
+
+  .container-center {
+    h2 {
+      font-size: 4em;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin: 0 20%;
+    }
+    p {
+      font-size: 0.9em;
+      font-style: italic;
+      line-height: 30px;
+      font-family: $font2;
+      margin: 30px 20% 30px 20%;
+    }
+
+   .img1 {
+    background-image: url(../../images/pic01.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 600px;
+    margin: 0 10%;
+ 
+   }
+  }
 }

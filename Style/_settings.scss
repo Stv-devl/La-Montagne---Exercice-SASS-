@@ -1,17 +1,22 @@
 
-@font-face {
-  font-family: "inter";
-  font-family: "merriweather";
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap');
+@font-face 
+  {
+    font-family: "inter";
+    src: url(../Font/Inter/Inter-Bold.ttf);
   }
 
+  @font-face {
+    font-family: "merriweather";
+    src: url(../Font/Merriweather/Merriweather-Bold.ttf);
+  }
+  
   $color1:rgb(254, 253, 253); //white
   $color2:rgb(15, 15, 15); //Black
   $color3:rgba(15, 15, 15, 0.5); //black opaque
-  $color4:rgb(206, 201, 201); //light grey
-  $color4:rgb(158, 158, 158); //grey
+  $color4:rgb(230, 222, 222); //light grey
+  $color5:rgb(158, 158, 158); //grey
   $font1: "inter", sans-serif;//inter
-  $font1: "merriweather", sans-serif;//inter
+  $font2: "merriweather", sans-serif;//inter
   
   * {
     margin: 0;
@@ -31,8 +36,32 @@
     min-height: 100vh;
     font-family: $font1;
     font-size: 13px;
-  }
-   
+    background: url(../images/bg.jpg) fixed center/cover;
+    color: $color2;
+    text-align: center;
+    }
+ 
+    button {
+      background: none; 
+      color: rgba(0, 0, 0, 0.9); 
+      outline: none; 
+      border: 1px solid rgba(44, 44, 44, 0.5);
+      width: 150px; 
+      height: 45px; 
+      border-radius: 20px; 
+      text-transform: uppercase; 
+      font-weight: 600;
+      font-size: 0.75rem; 
+      letter-spacing: 1px; 
+      transition: 0.4s ease; 
+      cursor: pointer; 
+    
+     &:hover {
+      color: whitesmoke;
+      background: rgba(0, 0, 0, 0.7);
+    }}
+    
+
 // MIXINS
 @mixin center {
   display: flex;

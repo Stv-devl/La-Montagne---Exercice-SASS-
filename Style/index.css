@@ -1,7 +1,10 @@
 @font-face {
   font-family: "inter";
+  src: url(../Font/Inter/Inter-Bold.ttf);
+}
+@font-face {
   font-family: "merriweather";
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap");
+  src: url(../Font/Merriweather/Merriweather-Bold.ttf);
 }
 * {
   margin: 0;
@@ -19,14 +22,31 @@ a {
 
 body {
   min-height: 100vh;
-  font-family: "merriweather", sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 13px;
+  background: url(../images/bg.jpg) fixed center/cover;
+  color: rgb(15, 15, 15);
+  text-align: center;
 }
 
-header {
-  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
-  min-width: 100vh;
-  height: 891px;
+button {
+  background: none;
+  color: rgba(0, 0, 0, 0.9);
+  outline: none;
+  border: 1px solid rgba(44, 44, 44, 0.5);
+  width: 150px;
+  height: 45px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .header-center {
@@ -37,60 +57,160 @@ header {
   flex-direction: column;
 }
 .header-center h1 {
-  font-size: 5em;
-  letter-spacing: 0.5px;
+  font-size: 6.2em;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  text-align: center;
   color: rgb(254, 253, 253);
-  font-family: "merriweather", sans-serif;
+}
+@media screen and (max-width: 650px) {
+  .header-center h1 {
+    font-size: 3rem;
+  }
 }
 .header-center p {
-  margin: 68px auto 70px auto;
-  font-size: 1.5em;
+  margin: 68px auto 75px auto;
+  font-size: 1.6em;
   font-style: italic;
   color: rgb(254, 253, 253);
   font-family: "merriweather", sans-serif;
 }
-
-header {
-  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
-  min-width: 100vh;
-  height: 891px;
+.header-center .cercle {
+  width: 75px;
+  height: 75px;
+  border: 2px solid rgb(254, 253, 253);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.header-center .cercle:hover {
+  color: rgb(15, 15, 15);
+  border: 2px solid rgb(15, 15, 15);
+}
+.header-center i {
+  color: rgb(254, 253, 253);
+  position: absolute;
+  top: 35px;
+  left: 25px;
+}
+.header-center i:hover {
+  color: rgb(15, 15, 15);
+  transition: 0.4s;
 }
 
-.header-center {
-  height: 818px;
+nav {
+  background: rgba(237, 235, 235, 0.2);
+  width: 72%;
+  height: 61px;
+  margin: auto;
+}
+@media screen and (max-width: 550px) {
+  nav {
+    width: 85%;
+  }
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 15% 13% 19% 25% 6.5% 6.5% 6.5% 6.5%;
+  grid-template-rows: 61px;
+  align-items: center;
+  justify-items: center;
+}
+@media screen and (max-width: 800px) {
+  nav ul {
+    grid-template-columns: 35% 30% 35%;
+  }
+}
+nav ul li {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: rgb(254, 253, 253);
+  cursor: pointer;
+  transition: 0.4s;
+  height: 100%;
+  width: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-.header-center h1 {
-  font-size: 5em;
-  letter-spacing: 0.5px;
+nav ul li:hover {
+  color: rgb(15, 15, 15);
+  background: rgb(230, 222, 222);
+}
+@media screen and (max-width: 800px) {
+  nav ul li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  nav ul li {
+    font-size: 0.8rem;
+    padding: 25px;
+  }
+}
+nav ul a {
+  color: rgb(254, 253, 253);
+  transition: 0.4s;
+}
+nav ul a:hover {
+  color: rgb(15, 15, 15);
+}
+@media screen and (max-width: 800px) {
+  nav ul a {
+    display: none;
+  }
+}
+
+.container {
+  background: rgb(254, 253, 253);
+  width: 72%;
+  height: 2417px;
+  margin: auto;
+  position: relative;
+}
+@media screen and (max-width: 550px) {
+  .container {
+    width: 85%;
+  }
+}
+.container .container-top {
+  padding: 50px 0 60px 0;
+}
+.container .container-top::before {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgb(230, 222, 222);
+  position: absolute;
+  transform: translatex(45%);
+}
+.container .container-top:after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgb(230, 222, 222);
+  position: absolute;
+  top: 52px;
+  transform: translatex(-145%);
+}
+.container .container-center h2 {
+  font-size: 4em;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  text-align: center;
-  color: rgb(254, 253, 253);
-  font-family: "merriweather", sans-serif;
+  margin: 0 20%;
 }
-.header-center p {
-  margin: 68px auto 70px auto;
-  font-size: 1.5em;
+.container .container-center p {
+  font-size: 0.9em;
   font-style: italic;
-  color: rgb(254, 253, 253);
+  line-height: 30px;
   font-family: "merriweather", sans-serif;
+  margin: 30px 20% 30px 20%;
 }
-
-section {
-  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
-  background-repeat: repeat-y;
-  min-width: 100vh;
-  height: 648px;
-}
-
-footer {
-  background: url(/05-SASS/TP1-La\ montagne/images/bg.jpg) center/cover;
-  background-repeat: no-repeat;
-  min-width: 100vh;
-  height: 763px;
+.container .container-center .img1 {
+  background-image: url(../../images/pic01.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 600px;
+  margin: 0 10%;
 }/*# sourceMappingURL=index.css.map */

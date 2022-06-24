@@ -1,0 +1,60 @@
+nav {
+  background: rgba(237, 235, 235, 0.2);
+  width: 72%;
+  height: 61px;
+  margin: auto;
+
+  @media screen and (max-width: 550px) {
+    width: 85%;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 15% 13% 19% 25% 6.5% 6.5% 6.5% 6.5%;
+    grid-template-rows: 61px;
+    align-items: center;
+    justify-items: center;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 35% 30% 35%;
+    }
+
+    li {
+      font-size: 0.9em;
+      text-transform: uppercase;
+      color: $color1;
+      cursor: pointer;
+      transition: 0.4s;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      @include center;
+
+      &:hover {
+        color: $color2;
+        background: $color4;
+      }
+
+      @media screen and (max-width: 800px) {
+        font-size: 0.9rem;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 0.8rem;
+        padding: 25px;
+      }
+    }
+
+    a {
+      color: $color1;
+      transition: 0.4s;
+
+      &:hover {
+        color: $color2;
+      }
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+}
