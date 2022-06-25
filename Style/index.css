@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "merriweather";
-  src: url(../Font/Merriweather/Merriweather-Bold.ttf);
+  src: url(../Font/Merriweather/Merriweather-Light.ttf);
 }
 * {
   margin: 0;
@@ -33,13 +33,12 @@ button {
   background: none;
   color: rgba(0, 0, 0, 0.9);
   outline: none;
-  border: 1px solid rgba(44, 44, 44, 0.5);
-  width: 150px;
-  height: 45px;
-  border-radius: 20px;
+  border: 2px solid rgb(44, 44, 44);
+  width: 130px;
+  height: 40px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   letter-spacing: 1px;
   transition: 0.4s ease;
   cursor: pointer;
@@ -133,6 +132,14 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
+nav ul li:first-child {
+  color: rgb(15, 15, 15);
+  background: rgb(230, 222, 222);
+}
+nav ul li:first-child:hover {
+  color: rgb(254, 253, 253);
+  background: rgba(237, 235, 235, 0.2);
+}
 nav ul li:hover {
   color: rgb(15, 15, 15);
   background: rgb(230, 222, 222);
@@ -174,7 +181,11 @@ nav ul a:hover {
   }
 }
 .container .container-top {
-  padding: 50px 0 60px 0;
+  padding: 70px 0 60px 0;
+}
+.container .container-top p {
+  font-family: "merriweather", sans-serif;
+  font-size: 1.2em;
 }
 .container .container-top::before {
   content: "";
@@ -190,7 +201,7 @@ nav ul a:hover {
   height: 2px;
   background: rgb(230, 222, 222);
   position: absolute;
-  top: 52px;
+  top: 72px;
   transform: translatex(-145%);
 }
 .container .container-center h2 {
@@ -199,12 +210,24 @@ nav ul a:hover {
   text-transform: uppercase;
   margin: 0 20%;
 }
+@media screen and (max-width: 750px) {
+  .container .container-center h2 {
+    font-size: 2.5em;
+    margin: 0 15%;
+  }
+}
 .container .container-center p {
-  font-size: 0.9em;
+  font-size: 1em;
   font-style: italic;
   line-height: 30px;
   font-family: "merriweather", sans-serif;
-  margin: 30px 20% 30px 20%;
+  margin: 30px 20% 50px 20%;
+}
+@media screen and (max-width: 550px) {
+  .container .container-center p {
+    font-size: 1em;
+    margin: 30px 30% 50px 30%;
+  }
 }
 .container .container-center .img1 {
   background-image: url(../../images/pic01.jpg);
@@ -213,4 +236,21 @@ nav ul a:hover {
   width: 80%;
   height: 600px;
   margin: 0 10%;
+}
+@media screen and (max-width: 850px) {
+  .container .container-center .img1 {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .container-center .img1 {
+    height: 220px;
+  }
+}
+.container .container-center button {
+  margin: 50px 0 80px 0;
+}
+.container .container-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }/*# sourceMappingURL=index.css.map */

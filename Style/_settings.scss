@@ -7,7 +7,7 @@
 
   @font-face {
     font-family: "merriweather";
-    src: url(../Font/Merriweather/Merriweather-Bold.ttf);
+    src: url(../Font/Merriweather/Merriweather-Light.ttf);
   }
   
   $color1:rgb(254, 253, 253); //white
@@ -45,13 +45,12 @@
       background: none; 
       color: rgba(0, 0, 0, 0.9); 
       outline: none; 
-      border: 1px solid rgba(44, 44, 44, 0.5);
-      width: 150px; 
-      height: 45px; 
-      border-radius: 20px; 
+      border: 2px solid rgb(44, 44, 44);
+      width: 130px; 
+      height: 40px; 
       text-transform: uppercase; 
       font-weight: 600;
-      font-size: 0.75rem; 
+      font-size: 0.7rem; 
       letter-spacing: 1px; 
       transition: 0.4s ease; 
       cursor: pointer; 
