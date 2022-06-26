@@ -34,7 +34,7 @@ button {
   color: rgba(0, 0, 0, 0.9);
   outline: none;
   border: 2px solid rgb(44, 44, 44);
-  width: 130px;
+  width: 140px;
   height: 40px;
   text-transform: uppercase;
   font-weight: 600;
@@ -171,13 +171,14 @@ nav ul a:hover {
 .container {
   background: rgb(254, 253, 253);
   width: 72%;
-  height: 2417px;
+  height: 1825px;
   margin: auto;
   position: relative;
 }
 @media screen and (max-width: 550px) {
   .container {
     width: 85%;
+    height: 2125px;
   }
 }
 .container .container-top {
@@ -253,4 +254,46 @@ nav ul a:hover {
 .container .container-bottom {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 550px) {
+  .container .container-bottom {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+}
+.container .container-bottom p {
+  font-family: "merriweather", sans-serif;
+  font-size: 1em;
+}
+.container .container-bottom h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 5% 25%;
+}
+.container .container-bottom .img2,
+.container .container-bottom .img3 {
+  width: 80%;
+  height: 250px;
+  margin: 0 10%;
+}
+@media screen and (max-width: 550px) {
+  .container .container-bottom .img2,
+.container .container-bottom .img3 {
+    height: 200px;
+  }
+}
+.container .container-bottom .img2 {
+  background: url(../../images/pic02.jpg) center/cover;
+}
+.container .container-bottom .img3 {
+  background: url(../../images/pic03.jpg) center/cover;
+}
+.container .container-bottom .description1,
+.container .container-bottom .description2 {
+  font-family: "merriweather", sans-serif;
+  font-size: 1em;
+  margin: 10% 10%;
+  text-align: left;
+  line-height: 30px;
 }/*# sourceMappingURL=index.css.map */
