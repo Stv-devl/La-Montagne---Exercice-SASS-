@@ -1,24 +1,25 @@
+  /*set nav*/    
 nav {
   background: rgba(237, 235, 235, 0.2);
   width: 72%;
   height: 61px;
   margin: auto;
-
+  /*nav media querie*/    
   @media screen and (max-width: 550px) {
     width: 85%;
   }
-
+  /*use grid for nav bar*/ 
   ul {
     display: grid;
     grid-template-columns: 15% 13% 19% 25% 6.5% 6.5% 6.5% 6.5%;
     grid-template-rows: 61px;
     align-items: center;
     justify-items: center;
-
+  /*media querie for nav bar*/ 
     @media screen and (max-width: 800px) {
       grid-template-columns: 35% 30% 35%;
     }
-
+  /*set button of nav bar*/ 
     li {
       font-size: 0.9em;
       text-transform: uppercase;
@@ -29,7 +30,7 @@ nav {
       width: 100%;
       text-align: center;
       @include center;
-
+  /*set transition for first button of nav bar*/ 
       &:first-child {
         color: $color2;
         background: $color4;
@@ -39,12 +40,12 @@ nav {
           background: rgba(237, 235, 235, 0.2);
         }
       }
-
+  /*set transition for other button of nav bar*/ 
       &:hover {
         color: $color2;
         background: $color4;
       }
-
+  /*set media querie for nav bar texte*/ 
       @media screen and (max-width: 800px) {
         font-size: 0.9rem;
       }
@@ -53,7 +54,7 @@ nav {
         padding: 25px;
       }
     }
-
+  /*set tranistion for icon*/ 
     a {
       color: $color1;
       transition: 0.4s;
@@ -61,7 +62,7 @@ nav {
       &:hover {
         color: $color2;
       }
-
+  /*set media querie for dont have icon*/ 
       @media screen and (max-width: 800px) {
         display: none;
       }

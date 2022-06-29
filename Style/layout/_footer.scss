@@ -1,0 +1,61 @@
+/*set footer size, grid + go down 30px in Y */
+footer {
+  background: $color1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 72%;
+  height: 100%;
+  margin: auto;
+  transform: translateY(30px);
+
+  /*set middle border*/
+  .contact-left {
+    border-right: 1px solid rgba(158, 158, 158, 0.4);
+
+    /*flex for align at left*/
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    /*padding*/
+    #name {
+      padding: 40px 0 0 0;
+    }
+
+    /*margin for form and set text*/
+    #name,
+    #email1,
+    #message {
+      text-transform: uppercase;
+      margin: 0 7.5% 0 7.5%;
+    }
+    /*set input size and margin*/
+    input {
+      width: 85%;
+      height: 50px;
+      margin: 20px auto;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+  }
+  /*set textarea size and margin*/
+  textarea {
+    width: 85%;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+  }
+  /*set button margin*/
+  button {
+    margin: 30px 7.5% 50px 7.5%;
+  }
+  /*set left grid*/
+  .contact-right {
+    display: grid;
+    grid-auto-rows: 25% 25% 25% 25%;
+  }
+}

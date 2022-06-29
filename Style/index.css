@@ -1,3 +1,5 @@
+/*****Setting*****/
+/*setting 2 fonts*/
 @font-face {
   font-family: "inter";
   src: url(../Font/Inter/Inter-Bold.ttf);
@@ -6,6 +8,8 @@
   font-family: "merriweather";
   src: url(../Font/Merriweather/Merriweather-Light.ttf);
 }
+/*setting colors*/
+/*setting page*/
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +19,13 @@
   outline: none;
 }
 
+/*setting decoration*/
 a {
   text-decoration: none;
   box-shadow: none;
 }
 
+/*setting body*/
 body {
   min-height: 100vh;
   font-family: "inter", sans-serif;
@@ -29,12 +35,13 @@ body {
   text-align: center;
 }
 
+/*setting all button*/
 button {
   background: none;
   color: rgba(0, 0, 0, 0.9);
   outline: none;
   border: 2px solid rgb(44, 44, 44);
-  width: 140px;
+  width: 160px;
   height: 40px;
   text-transform: uppercase;
   font-weight: 600;
@@ -42,24 +49,34 @@ button {
   letter-spacing: 1px;
   transition: 0.4s ease;
   cursor: pointer;
+  /*button hover, ease 0,4s*/
 }
 button:hover {
   color: whitesmoke;
   background: rgba(0, 0, 0, 0.7);
 }
 
+/*to use flex to center elements*/
+/*header size*/
 .header-center {
   height: 818px;
+  /*use misxin to center elements with flex */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /*set title*/
+  /*set p from header*/
+  /*set circle with icone*/
+  /*set cercle hover*/
+  /*set icone*/
 }
 .header-center h1 {
   font-size: 6.2em;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: rgb(254, 253, 253);
+  /*title media querie*/
 }
 @media screen and (max-width: 650px) {
   .header-center h1 {
@@ -90,17 +107,21 @@ button:hover {
   position: absolute;
   top: 35px;
   left: 25px;
+  /*set icone hover*/
 }
 .header-center i:hover {
   color: rgb(15, 15, 15);
   transition: 0.4s;
 }
 
+/*set nav*/
 nav {
   background: rgba(237, 235, 235, 0.2);
   width: 72%;
   height: 61px;
   margin: auto;
+  /*nav media querie*/
+  /*use grid for nav bar*/
 }
 @media screen and (max-width: 550px) {
   nav {
@@ -113,6 +134,9 @@ nav ul {
   grid-template-rows: 61px;
   align-items: center;
   justify-items: center;
+  /*media querie for nav bar*/
+  /*set button of nav bar*/
+  /*set tranistion for icon*/
 }
 @media screen and (max-width: 800px) {
   nav ul {
@@ -131,6 +155,9 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*set transition for first button of nav bar*/
+  /*set transition for other button of nav bar*/
+  /*set media querie for nav bar texte*/
 }
 nav ul li:first-child {
   color: rgb(15, 15, 15);
@@ -158,6 +185,7 @@ nav ul li:hover {
 nav ul a {
   color: rgb(254, 253, 253);
   transition: 0.4s;
+  /*set media querie for dont have icon*/
 }
 nav ul a:hover {
   color: rgb(15, 15, 15);
@@ -168,17 +196,20 @@ nav ul a:hover {
   }
 }
 
+/*set container size, color and relative*/
 .container {
   background: rgb(254, 253, 253);
   width: 72%;
-  height: 1825px;
+  height: 100%;
   margin: auto;
   position: relative;
+  /*set top of container text, before & after*/
+  /*set center container text*/
+  /*set bottom container*/
 }
 @media screen and (max-width: 550px) {
   .container {
     width: 85%;
-    height: 2125px;
   }
 }
 .container .container-top {
@@ -205,11 +236,16 @@ nav ul a:hover {
   top: 72px;
   transform: translatex(-145%);
 }
+.container .container-center {
+  /*set image*/
+  /*set button margin*/
+}
 .container .container-center h2 {
   font-size: 4em;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin: 0 20%;
+  /*set media querie*/
 }
 @media screen and (max-width: 750px) {
   .container .container-center h2 {
@@ -223,6 +259,7 @@ nav ul a:hover {
   line-height: 30px;
   font-family: "merriweather", sans-serif;
   margin: 30px 20% 50px 20%;
+  /*set media querie*/
 }
 @media screen and (max-width: 550px) {
   .container .container-center p {
@@ -237,6 +274,7 @@ nav ul a:hover {
   width: 80%;
   height: 600px;
   margin: 0 10%;
+  /*image media querie*/
 }
 @media screen and (max-width: 850px) {
   .container .container-center .img1 {
@@ -254,8 +292,11 @@ nav ul a:hover {
 .container .container-bottom {
   display: grid;
   grid-template-columns: 50% 50%;
+  /*media querie => new grid*/
+  /*set image size, media querie and add img*/
+  /*border around container left and right*/
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 705px) {
   .container .container-bottom {
     display: grid;
     grid-template-columns: 100%;
@@ -265,6 +306,7 @@ nav ul a:hover {
 .container .container-bottom p {
   font-family: "merriweather", sans-serif;
   font-size: 1em;
+  margin: 50px 0 0 0;
 }
 .container .container-bottom h3 {
   font-size: 1.5em;
@@ -296,4 +338,73 @@ nav ul a:hover {
   margin: 10% 10%;
   text-align: left;
   line-height: 30px;
+}
+.container .container-bottom button {
+  margin: 0 0 70px 0;
+}
+.container .container-bottom .container-b-left {
+  border-right: 1px solid rgba(158, 158, 158, 0.4);
+  border-top: 1px solid rgba(158, 158, 158, 0.4);
+}
+.container .container-bottom .container-b-right {
+  border-top: 1px solid rgba(158, 158, 158, 0.4);
+}
+
+/*set footer size, grid + go down 30px in Y */
+footer {
+  background: rgb(254, 253, 253);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 72%;
+  height: 100%;
+  margin: auto;
+  transform: translateY(30px);
+  /*set middle border*/
+  /*set textarea size and margin*/
+  /*set button margin*/
+  /*set left grid*/
+}
+footer .contact-left {
+  border-right: 1px solid rgba(158, 158, 158, 0.4);
+  /*flex for align at left*/
+  /*padding*/
+  /*margin for form and set text*/
+  /*set input size and margin*/
+}
+footer .contact-left form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+footer .contact-left #name {
+  padding: 40px 0 0 0;
+}
+footer .contact-left #name,
+footer .contact-left #email1,
+footer .contact-left #message {
+  text-transform: uppercase;
+  margin: 0 7.5% 0 7.5%;
+}
+footer .contact-left input {
+  width: 85%;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+footer textarea {
+  width: 85%;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  resize: none;
+}
+footer button {
+  margin: 30px 7.5% 50px 7.5%;
+}
+footer .contact-right {
+  display: grid;
+  grid-auto-rows: 25% 25% 25% 25%;
 }/*# sourceMappingURL=index.css.map */

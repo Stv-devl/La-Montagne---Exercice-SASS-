@@ -1,21 +1,22 @@
+/*header size*/     
 .header-center {
   height: 818px;
 
+/*use misxin to center elements with flex */     
   @include center;
-
   flex-direction: column;
-
+/*set title*/    
   h1 {
     font-size: 6.2em;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: $color1;
-
+/*title media querie*/   
     @media screen and (max-width: 650px) {
       font-size: 3rem;
     }
   }
-
+/*set p from header*/    
   p {
     margin: 68px auto 75px auto;
     font-size: 1.6em;
@@ -23,6 +24,7 @@
     color: $color1;
     font-family: $font2;
   }
+  /*set circle with icone*/    
   .cercle {
     width: 75px;
     height: 75px;
@@ -31,18 +33,18 @@
     cursor: pointer;
     position: relative;
   }
+  /*set cercle hover*/    
     .cercle:hover {
       color: $color2;
       border: 2px solid $color2;
     }
-
+  /*set icone*/    
     i {
       color: $color1;
       position: absolute;
       top: 35px;
       left: 25px;
-
-
+  /*set icone hover*/    
       &:hover {
         color: $color2;
         transition: 0.4s;

@@ -1,4 +1,5 @@
-
+/*****Setting*****/
+/*setting 2 fonts*/
 @font-face 
   {
     font-family: "inter";
@@ -9,7 +10,7 @@
     font-family: "merriweather";
     src: url(../Font/Merriweather/Merriweather-Light.ttf);
   }
-  
+/*setting colors*/
   $color1:rgb(254, 253, 253); //white
   $color2:rgb(15, 15, 15); //Black
   $color3:rgba(15, 15, 15, 0.5); //black opaque
@@ -17,7 +18,7 @@
   $color5:rgb(158, 158, 158); //grey
   $font1: "inter", sans-serif;//inter
   $font2: "merriweather", sans-serif;//inter
-  
+/*setting page*/
   * {
     margin: 0;
     padding: 0;
@@ -26,12 +27,12 @@
     margin-block: 0;
     outline: none;
   }
-  
+/*setting decoration*/  
   a {
     text-decoration: none;
     box-shadow: none;
   }
-
+/*setting body*/  
   body {
     min-height: 100vh;
     font-family: $font1;
@@ -40,13 +41,13 @@
     color: $color2;
     text-align: center;
     }
- 
+/*setting all button*/  
     button {
       background: none; 
       color: rgba(0, 0, 0, 0.9); 
       outline: none; 
       border: 2px solid rgb(44, 44, 44);
-      width: 140px; 
+      width: 160px; 
       height: 40px; 
       text-transform: uppercase; 
       font-weight: 600;
@@ -54,14 +55,13 @@
       letter-spacing: 1px; 
       transition: 0.4s ease; 
       cursor: pointer; 
-    
+/*button hover, ease 0,4s*/      
      &:hover {
       color: whitesmoke;
       background: rgba(0, 0, 0, 0.7);
     }}
     
-
-// MIXINS
+/*to use flex to center elements*/      
 @mixin center {
   display: flex;
   justify-content: center;
