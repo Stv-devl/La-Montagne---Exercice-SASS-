@@ -205,7 +205,9 @@ nav ul a:hover {
   position: relative;
   /*set top of container text, before & after*/
   /*set center container text*/
-  /*set bottom container*/
+  /*set center container text*/
+  /*set image*/
+  /*set button margin*/
 }
 @media screen and (max-width: 550px) {
   .container {
@@ -236,10 +238,6 @@ nav ul a:hover {
   top: 72px;
   transform: translatex(-145%);
 }
-.container .container-center {
-  /*set image*/
-  /*set button margin*/
-}
 .container .container-center h2 {
   font-size: 4em;
   letter-spacing: 4px;
@@ -267,7 +265,7 @@ nav ul a:hover {
     margin: 30px 30% 50px 30%;
   }
 }
-.container .container-center .img1 {
+.container .img1 {
   background-image: url(../../images/pic01.jpg);
   background-size: cover;
   background-position: center;
@@ -277,19 +275,21 @@ nav ul a:hover {
   /*image media querie*/
 }
 @media screen and (max-width: 850px) {
-  .container .container-center .img1 {
+  .container .img1 {
     height: 400px;
   }
 }
 @media screen and (max-width: 600px) {
-  .container .container-center .img1 {
+  .container .img1 {
     height: 220px;
   }
 }
-.container .container-center button {
+.container button {
   margin: 50px 0 80px 0;
 }
-.container .container-bottom {
+
+/*set bottom container*/
+.container-bottom {
   display: grid;
   grid-template-columns: 50% 50%;
   /*media querie => new grid*/
@@ -297,56 +297,56 @@ nav ul a:hover {
   /*border around container left and right*/
 }
 @media screen and (max-width: 705px) {
-  .container .container-bottom {
+  .container-bottom {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
   }
 }
-.container .container-bottom p {
+.container-bottom p {
   font-family: "merriweather", sans-serif;
   font-size: 1em;
   margin: 50px 0 0 0;
 }
-.container .container-bottom h3 {
+.container-bottom h3 {
   font-size: 1.5em;
   text-transform: uppercase;
   margin: 5% 25%;
 }
-.container .container-bottom .img2,
-.container .container-bottom .img3 {
+.container-bottom .img2,
+.container-bottom .img3 {
   width: 80%;
   height: 250px;
   margin: 0 10%;
 }
 @media screen and (max-width: 550px) {
-  .container .container-bottom .img2,
-.container .container-bottom .img3 {
+  .container-bottom .img2,
+.container-bottom .img3 {
     height: 200px;
   }
 }
-.container .container-bottom .img2 {
+.container-bottom .img2 {
   background: url(../../images/pic02.jpg) center/cover;
 }
-.container .container-bottom .img3 {
+.container-bottom .img3 {
   background: url(../../images/pic03.jpg) center/cover;
 }
-.container .container-bottom .description1,
-.container .container-bottom .description2 {
+.container-bottom .description1,
+.container-bottom .description2 {
   font-family: "merriweather", sans-serif;
   font-size: 1em;
   margin: 10% 10%;
   text-align: left;
   line-height: 30px;
 }
-.container .container-bottom button {
+.container-bottom button {
   margin: 0 0 70px 0;
 }
-.container .container-bottom .container-b-left {
+.container-bottom .container-b-left {
   border-right: 1px solid rgba(158, 158, 158, 0.4);
   border-top: 1px solid rgba(158, 158, 158, 0.4);
 }
-.container .container-bottom .container-b-right {
+.container-bottom .container-b-right {
   border-top: 1px solid rgba(158, 158, 158, 0.4);
 }
 
@@ -359,10 +359,18 @@ footer {
   height: 100%;
   margin: auto;
   transform: translateY(30px);
+  /*set media querie in diplay block */
   /*set middle border*/
   /*set textarea size and margin*/
   /*set button margin*/
   /*set left grid*/
+  /*3 grid for contact*/
+  /*1 grid for social and hover in socila*/
+}
+@media screen and (max-width: 705px) {
+  footer {
+    display: block;
+  }
 }
 footer .contact-left {
   border-right: 1px solid rgba(158, 158, 158, 0.4);
@@ -407,4 +415,54 @@ footer button {
 footer .contact-right {
   display: grid;
   grid-auto-rows: 25% 25% 25% 25%;
+}
+footer .grid1,
+footer .grid2,
+footer .grid3 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: start;
+  align-items: center;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.4);
+}
+footer .grid1 h3,
+footer .grid2 h3,
+footer .grid3 h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 20%;
+}
+footer .grid1 p,
+footer .grid2 p,
+footer .grid3 p {
+  text-align: left;
+  color: rgb(158, 158, 158);
+  font-size: 0.75rem;
+  font-family: "merriweather", sans-serif;
+}
+footer .grid4 ul {
+  display: grid;
+  grid-template-columns: 30% 10% 10% 10% 10% 30%;
+  justify-items: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+footer .grid4 ul h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 20%;
+}
+footer .grid4 ul li {
+  border: 1px solid rgba(158, 158, 158, 0.4);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding-top: 6px;
+}
+footer .grid4 ul li a {
+  color: rgb(15, 15, 15);
+}
+footer .grid4 ul li a:hover {
+  color: rgb(158, 158, 158);
 }/*# sourceMappingURL=index.css.map */

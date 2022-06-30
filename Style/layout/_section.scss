@@ -39,8 +39,8 @@
     }
   }
   /*set center container text*/
-  .container-center {
-    h2 {
+  .container-center h2 
+    {
       font-size: 4em;
       letter-spacing: 4px;
       text-transform: uppercase;
@@ -51,8 +51,8 @@
         margin: 0 15%;
       }
     }
-
-    p {
+  /*set center container text*/
+    .container-center p {
       font-size: 1em;
       font-style: italic;
       line-height: 30px;
@@ -146,4 +146,4 @@
       border-top: 1px solid rgba(158, 158, 158, 0.4);
     }
   }
-}
+
