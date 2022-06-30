@@ -8,9 +8,16 @@ footer {
   margin: auto;
   transform: translateY(30px);
 
+/*set media querie for be same size tahn nav and section */
+@media screen and (max-width: 550px) {
+  width: 85%;
+  margin: auto;
+}
+
 /*set media querie in diplay block */
-  @media screen and (max-width: 705px) {
-    display: block;}
+@media screen and (max-width: 705px) {
+    display: block;
+  }
 
   /*set middle border*/
   .contact-left {
@@ -93,6 +100,11 @@ footer {
   align-items: center;
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: 550px) {
+  grid-template-columns: 30% 12.5% 12.5% 12.5% 12.5% 20%;
+  }
+
 
   h3 {
     text-transform: uppercase;

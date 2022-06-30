@@ -29,6 +29,7 @@ nav {
       height: 100%;
       width: 100%;
       text-align: center;
+   /*use mixin for center elements*/      
       @include center;
   /*set transition for first button of nav bar*/ 
       &:first-child {
@@ -55,7 +56,7 @@ nav {
       }
     }
   /*set tranistion for icon*/ 
-    a {
+    i {
       color: $color1;
       transition: 0.4s;
 

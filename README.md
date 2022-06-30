@@ -4,7 +4,6 @@
 
 - [Overview](#overview)
   - [Exercice](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,27 +14,18 @@
 
 ### EXERCICE
 
-This exercise is for learning Sass by realize the frontend of a website maquette.
+This exercise is from [Fromscratch a frontend class](https://fromscratch.podia.com/suggested)
+It's use for working Sass by realize the frontend of a website maquette.
 
 ![](./maquette-desktop.png)
 
-### Screenshot
-
-The result for desktop : (IN CONSTRUCTION)
-
-![](.)
-
-For mobile :(IN CONSTRUCTION)
-
-![](.)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://stv-devl.github.io//)
+- My solution for this exercice: [See solution](https://stv-devl.github.io/La-Montagne---Exercice-SASS-/)
 
 ## My process
 
-I will use Sass grid and flexbox
+I use Sass grid and flexbox
 
 ### Built with
 
@@ -47,6 +37,11 @@ I will use Sass grid and flexbox
 - Mobile-first workflow
 
 ### What I learned
+
+I learned to write my CSS with SASS, organise my layout for doing more complex work.
+I learned to use #before, #after and #hover with SASS.
+I learned to improve my Grid and to use flexbox and grid for center elements.
+I also improved my responsive with this exercice.
 
 ## Author
 
